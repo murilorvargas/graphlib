@@ -4,7 +4,7 @@ CFLAGS = -Wall -O2
 all: main
 
 main: main.o lib_ppm.o
-	$(CC) $(CFLAGS) -o main main.o lib_ppm.o
+	$(CC) $(CFLAGS) -o main main.o lib_ppm.o -lm
 
 main.o: main.c
 	$(CC) $(CFLAGS) -c main.c
